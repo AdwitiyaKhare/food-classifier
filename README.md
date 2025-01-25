@@ -116,5 +116,5 @@ food-classifier/
 - **Model Architecture**: Convolutional Neural Networks (CNN)
 
 ## Acknowledgments
-- Dataset: [Kaggle Indian Food Dataset](link-to-dataset)
+- Dataset: [Kaggle Indian Food Dataset](https://www.kaggle.com/datasets/l33tc0d3r/indian-food-classification)
 - Libraries: PyTorch, Torchvision, Flask, Cropper.js
