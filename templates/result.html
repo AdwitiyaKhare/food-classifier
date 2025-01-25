@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .note {
+            color: red;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button class="toggle-btn" onclick="toggleMode()">Toggle Dark Mode</button>
+    <h1>Prediction Result</h1>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename=image_path.split('static/')[-1]) }}" alt="Uploaded Image">
+    </div>
+    <p><strong>Detected Food:</strong> {{ label }}</p>
+    <p class="note">Note: The model isn't perfect and may predict incorrectly. Please verify the results!</p>
+    <a href="/" class="btn" onclick="redirectWithMode()">Try Another Image</a>
+    <script src="{{ url_for('static', filename='js/result.js') }}"></script>
+</body>
+</html>
